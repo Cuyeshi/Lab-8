@@ -2,7 +2,7 @@
 
 namespace LibraryForFigures.Types
 {
-    internal class Circle : Figures
+    public class Circle : Figures
     {
         private readonly Point _center;
 
