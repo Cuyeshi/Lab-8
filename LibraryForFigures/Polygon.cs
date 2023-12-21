@@ -1,4 +1,5 @@
 ﻿using LibraryForFigures.Parametrs;
+using LibraryForFigures.Types;
 using System.Reflection.Metadata;
 
 namespace LibraryForFigures
@@ -65,24 +66,16 @@ namespace LibraryForFigures
         {
             return color switch
             {
-                "Белый" => new Polygon(side, Clr.Белый),
-                "White" => new Polygon(side, Clr.Белый),
-                "Черный" => new Polygon(side, Clr.Черный),
-                "Black" => new Polygon(side, Clr.Черный),
-                "Желтый" => new Polygon(side, Clr.Желтый),
-                "Yellow" => new Polygon(side, Clr.Желтый),
-                "Красный" => new Polygon(side   , Clr.Красный),
-                "Red" => new Polygon(side, Clr.Красный),
-                "Зеленый" => new Polygon(side, Clr.Зеленый),
-                "Green" => new Polygon(side, Clr.Зеленый),
-                "Синий" => new Polygon(side, Clr.Синий),
-                "Blue" => new Polygon(side, Clr.Синий),
-                "Фиолетовый" => new Polygon(side, Clr.Фиолетовый),
-                "Purple" => new Polygon(side, Clr.Фиолетовый),
-                "Оранжевый" => new Polygon(side, Clr.Оранжевый),
-                "Orange" => new Polygon(side, Clr.Оранжевый),
-                "Розовый" => new Polygon(side, Clr.Розовый),
-                "Pink" => new Polygon(side, Clr.Розовый),
+                "White" => new Square(side, Clr.Белый),
+                "Black" => new Square(side, Clr.Черный),
+                "Yellow" => new Square(side, Clr.Желтый),
+                "Red" => new Square(side, Clr.Красный),
+                "Green" => new Square(side, Clr.Зеленый),
+                "Blue" => new Square(side, Clr.Синий),
+                "Purple" => new Square(side, Clr.Фиолетовый),
+                "Orange" => new Square(side, Clr.Оранжевый),
+                "Pink" => new Square(side, Clr.Розовый),
+                _ => new Square(),
                 _ => new Polygon(),
             };
         }

@@ -64,25 +64,16 @@ namespace LibraryForFigures.Types
         {
             return color switch
             {
-                "Белый" => new Triangle(side, Clr.Белый),
-                "White" => new Triangle(side, Clr.Белый),
-                "Черный" => new Triangle(side, Clr.Черный),
-                "Black" => new Triangle(side, Clr.Черный),
-                "Желтый" => new Triangle(side, Clr.Желтый),
-                "Yellow" => new Triangle(side, Clr.Желтый),
-                "Красный" => new Triangle(side, Clr.Красный),
-                "Red" => new Triangle(side, Clr.Красный),
-                "Зеленый" => new Triangle(side, Clr.Зеленый),
-                "Green" => new Triangle(side, Clr.Зеленый),
-                "Синий" => new Triangle(side, Clr.Синий),
-                "Blue" => new Triangle(side, Clr.Синий),
-                "Фиолетовый" => new Triangle(side, Clr.Фиолетовый),
-                "Purple" => new Triangle(side, Clr.Фиолетовый),
-                "Оранжевый" => new Triangle(side, Clr.Оранжевый),
-                "Orange" => new Triangle(side, Clr.Оранжевый),
-                "Розовый" => new Triangle(side, Clr.Розовый),
-                "Pink" => new Triangle(side, Clr.Розовый),
-                _ => new Triangle(),
+                "White" => new Square(side, Clr.Белый),
+                "Black" => new Square(side, Clr.Черный),
+                "Yellow" => new Square(side, Clr.Желтый),
+                "Red" => new Square(side, Clr.Красный),
+                "Green" => new Square(side, Clr.Зеленый),
+                "Blue" => new Square(side, Clr.Синий),
+                "Purple" => new Square(side, Clr.Фиолетовый),
+                "Orange" => new Square(side, Clr.Оранжевый),
+                "Pink" => new Square(side, Clr.Розовый),
+                _ => new Square(),
             };
         }
 

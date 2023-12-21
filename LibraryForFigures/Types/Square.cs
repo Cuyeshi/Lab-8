@@ -64,23 +64,14 @@ namespace LibraryForFigures.Types
         {
             return color switch
             {
-                "Белый" => new Square(side, Clr.Белый),
                 "White" => new Square(side, Clr.Белый),
-                "Черный" => new Square(side, Clr.Черный),
                 "Black" => new Square(side, Clr.Черный),
-                "Желтый" => new Square(side, Clr.Желтый),
                 "Yellow" => new Square(side, Clr.Желтый),
-                "Красный" => new Square(side, Clr.Красный),
                 "Red" => new Square(side, Clr.Красный),
-                "Зеленый" => new Square(side, Clr.Зеленый),
                 "Green" => new Square(side, Clr.Зеленый),
-                "Синий" => new Square(side, Clr.Синий),
                 "Blue" => new Square(side, Clr.Синий),
-                "Фиолетовый" => new Square(side, Clr.Фиолетовый),
                 "Purple" => new Square(side, Clr.Фиолетовый),
-                "Оранжевый" => new Square(side, Clr.Оранжевый),
                 "Orange" => new Square(side, Clr.Оранжевый),
-                "Розовый" => new Square(side, Clr.Розовый),
                 "Pink" => new Square(side, Clr.Розовый),
                 _ => new Square(),
             };
