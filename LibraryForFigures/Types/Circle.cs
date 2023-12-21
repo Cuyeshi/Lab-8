@@ -79,10 +79,10 @@ namespace LibraryForFigures.Types
         {
             return $"Информация о {_type}: \n" +
                    $"\tКоординаты центра: ({_center.X};{_center.Y}); \n" +
-                   $"\tРадиус окружности равен {Math.Round(Radius, 3)}; \n" +
-                   $"\tЦвет окружности: {_color}; \n" +
-                   $"\tПлощадь окружности равна {Math.Round(Area(), 3)}; \n" +
-                   $"\tДлина окружности равна {Math.Round(Circumference, 3)}. \n";
+                   $"\tРадиус равен {Math.Round(Radius, 3)}; \n" +
+                   $"\tЦвет: {_color}; \n" +
+                   $"\tПлощадь равна {Math.Round(Area(), 3)}; \n" +
+                   $"\tДлина равна {Math.Round(Circumference, 3)}. \n";
         }
     }
 }
