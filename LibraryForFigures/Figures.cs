@@ -4,12 +4,12 @@ namespace LibraryForFigures
 {
     public abstract class Figures
     {
-        private  readonly string _type;
+        private readonly string _type;
 
-        private  readonly Clr _colour;
+        private readonly Clr _color;
         public string Type => _type;
 
-        public Clr Colour => _colour;
+        public Clr Color => _color;
 
         public abstract double Area();
 
