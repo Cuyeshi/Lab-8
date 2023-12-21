@@ -1,9 +1,18 @@
-﻿namespace LibraryForFigures
+﻿using LibraryForFigures.Parametrs;
+
+namespace LibraryForFigures
 {
     public abstract class Figures
     {
-        public abstract string Type { get; }
+        private  readonly string _type;
 
-        public abstract string Color { get; }
+        private  readonly Clr _colour;
+        public string Type => _type;
+
+        public Clr Colour => _colour;
+
+        public abstract double Area();
+
+        public abstract string Info();
     }
 }
