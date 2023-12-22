@@ -5,7 +5,7 @@ using System.Reflection.Metadata;
 
 namespace LibraryForFigures
 {
-    public class Polygon : Figures, IComparable<Polygon>
+    public class Polygon : GeometricFigure, IComparable<Polygon>
     {
         private readonly double[] _side;
 

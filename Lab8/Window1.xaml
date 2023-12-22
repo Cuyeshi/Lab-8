@@ -1,0 +1,35 @@
+﻿<Window x:Class="Lab8.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab8"
+        mc:Ignorable="d"
+            MinWidth="800" MinHeight="720" Title="Вывод всех фигур">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+            <Grid Name="grid1" MinHeight="720"  HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                    <RowDefinition Height="125"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"></ColumnDefinition>
+                    <ColumnDefinition Width="300"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>

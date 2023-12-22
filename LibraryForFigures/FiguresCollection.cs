@@ -5,11 +5,11 @@ namespace LibraryForFigures
 {
     public class FigureCollection : IFiguresCollection
     {
-        private readonly List<Figures> figures = new List<Figures>();
+        private readonly List<GeometricFigure> figures = new List<GeometricFigure>();
 
-        public IEnumerable<Figures> Figures => figures;
+        public IEnumerable<GeometricFigure> Figures => figures;
 
-        public Figures this[int i]
+        public GeometricFigure this[int i]
         {
             get
             {
@@ -20,7 +20,7 @@ namespace LibraryForFigures
         }
         public IEnumerator GetEnumerator()
         {
-            foreach (Figures figure in figures)
+            foreach (GeometricFigure figure in figures)
             {
                 yield return figure;
             }
@@ -31,7 +31,7 @@ namespace LibraryForFigures
             figures = [];
         }
 
-        public FigureCollection(params Figures[] figures1)
+        public FigureCollection(params GeometricFigure[] figures1)
         {
             figures = figures1.ToList();
         }
@@ -41,18 +41,18 @@ namespace LibraryForFigures
         public string Info()
         {
             string output = "Информация о всех геометрических фигурах: \n";
-            foreach (Figures figure in figures)
+            foreach (GeometricFigure figure in figures)
             {
                 output += figure.Info();
             }
             return output;
         }
 
-        public void Add(Figures figure) => figures.Add(figure);
+        public void Add(GeometricFigure figure) => figures.Add(figure);
 
-        public bool Remove(Figures figure)
+        public bool Remove(GeometricFigure figure)
         {
-            foreach (Figures gfigure in figures)
+            foreach (GeometricFigure gfigure in figures)
             {
                 if(figure.Info() == figure.Info())
                 {
@@ -63,18 +63,17 @@ namespace LibraryForFigures
             return false;
         }
 
-        public void AddRange(Figures[] gfigures) => figures.AddRange(gfigures);
+        public void AddRange(GeometricFigure[] gfigures) => figures.AddRange(gfigures);
 
-        public void SortByArea()
+        public Polygon[] Polygons => figures.OfType<Polygon>().ToArray();
+        public Polygon[] SortByArea()
         {
-            foreach(Figures figure in figures)
-            {
-                figure.Area().CompareTo(figure.Area());
-            }
+            Array.Sort(Polygons);
+            return Polygons;
         }
 
         public List<double> AllCircumferenceMoreOneChapter() => (from circ in figures.OfType<Circle>()
-                                                                 where circ.Center.Chapter == 1 && circ.Center.X > circ.Radius && circ.Center.Y > circ.Radius
+                                                                 where circ.Center.Chapter == 1 && circ.Center.X > circ.Radius && circ.Center.Y > circ.Radius && circ.Colour == Parametrs.Clr.Зеленый
                                                                  select circ.Circumference).ToList();
     }
 }

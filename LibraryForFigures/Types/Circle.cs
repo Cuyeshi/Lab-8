@@ -2,7 +2,7 @@
 
 namespace LibraryForFigures.Types
 {
-    public class Circle : Figures
+    public class Circle : GeometricFigure
     {
         private readonly Point _center;
 

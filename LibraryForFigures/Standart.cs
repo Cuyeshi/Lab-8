@@ -18,7 +18,7 @@ namespace LibraryForFigures
 
                     new Circle(),
 
-                    new Circle(new Parametrs.Point(2,3), 7, Parametrs.Clr.Зеленый),
+                    new Circle(new Parametrs.Point(2,3), 1, Parametrs.Clr.Зеленый),
 
                     new Triangle(),
 
