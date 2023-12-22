@@ -1,5 +1,6 @@
 ﻿using LibraryForFigures.Parametrs;
 using LibraryForFigures.Types;
+using System;
 using System.Reflection.Metadata;
 
 namespace LibraryForFigures
@@ -66,16 +67,15 @@ namespace LibraryForFigures
         {
             return color switch
             {
-                "White" => new Square(side, Clr.Белый),
-                "Black" => new Square(side, Clr.Черный),
-                "Yellow" => new Square(side, Clr.Желтый),
-                "Red" => new Square(side, Clr.Красный),
-                "Green" => new Square(side, Clr.Зеленый),
-                "Blue" => new Square(side, Clr.Синий),
-                "Purple" => new Square(side, Clr.Фиолетовый),
-                "Orange" => new Square(side, Clr.Оранжевый),
-                "Pink" => new Square(side, Clr.Розовый),
-                _ => new Square(),
+                "White" => new Polygon(side, Clr.Белый),
+                "Black" => new Polygon(side, Clr.Черный),
+                "Yellow" => new Polygon(side, Clr.Желтый),
+                "Red" => new Polygon(side, Clr.Красный),
+                "Green" => new Polygon(side, Clr.Зеленый),
+                "Blue" => new Polygon(side, Clr.Синий),
+                "Purple" => new Polygon(side, Clr.Фиолетовый),
+                "Orange" => new Polygon(side, Clr.Оранжевый),
+                "Pink" => new Polygon(side, Clr.Розовый),
                 _ => new Polygon(),
             };
         }
@@ -91,10 +91,11 @@ namespace LibraryForFigures
             return output;
         }
 
-        public int CompareTo(Polygon polygon)
+        public int CompareTo(Polygon? polygon)
         {
-            if (polygon is null) throw new ArgumentNullException("Некорректное значение параметра");
+            if (polygon is null) throw new ArgumentException("Некорректное значение параметра");
             return Area().CompareTo(polygon.Area());
         }
+        
     }
 }

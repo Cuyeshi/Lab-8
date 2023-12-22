@@ -40,6 +40,8 @@ namespace LibraryForFigures.Types
 
         public double Radius => _radius;
 
+        public Point Center => _center;
+
         public double Circumference
         {  get 
             { 
@@ -53,23 +55,14 @@ namespace LibraryForFigures.Types
         {
             return color switch
             {
-                "Белый" => new Circle(center, radius, Clr.Белый),
                 "White" => new Circle(center, radius, Clr.Белый),
-                "Черный" => new Circle(center, radius, Clr.Черный),
                 "Black" => new Circle(center, radius, Clr.Черный),
-                "Желтый" => new Circle(center, radius, Clr.Желтый),
                 "Yellow" => new Circle(center, radius, Clr.Желтый),
-                "Красный" => new Circle(center, radius, Clr.Красный),
                 "Red" => new Circle(center, radius, Clr.Красный),
-                "Зеленый" => new Circle(center, radius, Clr.Зеленый),
                 "Green" => new Circle(center, radius, Clr.Зеленый),
-                "Синий" => new Circle(center, radius, Clr.Синий),
                 "Blue" => new Circle(center, radius, Clr.Синий),
-                "Фиолетовый" => new Circle(center, radius, Clr.Фиолетовый),
                 "Purple" => new Circle(center, radius, Clr.Фиолетовый),
-                "Оранжевый" => new Circle(center, radius, Clr.Оранжевый),
                 "Orange" => new Circle(center, radius, Clr.Оранжевый),
-                "Розовый" => new Circle(center, radius, Clr.Розовый),
                 "Pink" => new Circle(center, radius, Clr.Розовый),
                 _ => new Circle(),
             };
