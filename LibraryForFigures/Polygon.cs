@@ -1,7 +1,4 @@
 ﻿using LibraryForFigures.Parametrs;
-using LibraryForFigures.Types;
-using System;
-using System.Reflection.Metadata;
 
 namespace LibraryForFigures
 {
@@ -87,7 +84,8 @@ namespace LibraryForFigures
             {
                 output += $"{_side[i]} ";
             }
-            output += $"\n\tПлощадь равна {Math.Round(Area(), 3)}; \n";
+            output += $"\n\tЦвет: {_color};\n";
+            output += $"\tПлощадь равна {Math.Round(Area(), 3)}; \n";
             return output;
         }
 

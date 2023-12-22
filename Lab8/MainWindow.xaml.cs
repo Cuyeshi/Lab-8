@@ -1,12 +1,5 @@
 ﻿using LibraryForFigures;
-using LibraryForFigures.Types;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 
 namespace Lab8
 {
@@ -29,17 +22,17 @@ namespace Lab8
 
         private void Button2_Click(object sender, RoutedEventArgs e)
         {
-
+            new AddFigure(Figures).Show();
         }
 
         private void Button3_Click(object sender, RoutedEventArgs e)
         {
-
+            new RemoveFigure(Figures).Show();
         }
 
         private void Button4_Click(object sender, RoutedEventArgs e)
         {
-            
+            new FileFigure(Figures).Show();
         }
 
         private void Button5_Click(object sender, RoutedEventArgs e)

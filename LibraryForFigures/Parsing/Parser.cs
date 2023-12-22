@@ -4,7 +4,7 @@ using LibraryForFigures.Parametrs;
 
 namespace LibraryForFigures.Parsing
 {
-    internal class Parser
+    public class Parser
     {
         public static Circle ParseToCircle(string input)
         {

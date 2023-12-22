@@ -22,7 +22,7 @@ namespace LibraryForFigures
 
                     new Triangle(),
 
-                    new Triangle(new double[] {3,3,3}, Parametrs.Clr.Розовый)
+                    new Triangle(new double[] {3,3,3}, Parametrs.Clr.Желтый)
                 ];
             }
         }
