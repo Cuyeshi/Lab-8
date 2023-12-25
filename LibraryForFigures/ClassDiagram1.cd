@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Параметр,содержащий в себе координаты точек">
+    <Position X="5.401" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Параметр, содержащий в себе цвет фигуры">
+    <Position X="7.425" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Пример FigureCollection">
+    <Position X="9.412" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Интерфейс и класс для хранения некоторого количества различых фигур">
+    <Position X="11.914" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Класс для разделения строки на нужные параметры">
+    <Position X="13.938" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="LibraryForFigures.Parametrs.Point" Collapsed="true">
+    <Position X="5.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAIAAQAAAAAAAAAAAAAAAAoAABAAgAAAABAYAA=</HashCode>
+      <FileName>Parametrs\Point.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryForFigures.Parsing.Parser" Collapsed="true">
+    <Position X="14" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAgAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parsing\Parser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryForFigures.Types.Circle" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQIAAAAAAAIAAQAAAAAAAgAAAAAAAAAAAAAgUEIAgA=</HashCode>
+      <FileName>Types\Circle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryForFigures.Types.Square" Collapsed="true">
+    <Position X="3.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAIgAQAAAAAAAAAAAAAAAAACAAAiUEAAAA=</HashCode>
+      <FileName>Types\Square.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryForFigures.Types.Triangle" Collapsed="true">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIgAQAAAAAAAAQAAAAAAAACAAAiUEAAAA=</HashCode>
+      <FileName>Types\Triangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryForFigures.Figures" Collapsed="true">
+    <Position X="3.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAQAAgUAAAAA=</HashCode>
+      <FileName>Figures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryForFigures.Polygon" Collapsed="true">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIgAQCAAAAAAAAAAAAAAAACAAAiUEAAAA=</HashCode>
+      <FileName>Polygon.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LibraryForFigures.Standart" Collapsed="true">
+    <Position X="9.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Standart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibraryForFigures.FigureCollection" Collapsed="true">
+    <Position X="12" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIAACAAAAAABBAQCAAABAAAAAAAAAABAAAAAUAEIAA=</HashCode>
+      <FileName>FiguresCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="LibraryForFigures.IFiguresCollection" Collapsed="true">
+    <Position X="12" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAUAAAAA=</HashCode>
+      <FileName>IFiguresCollection.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="LibraryForFigures.Parametrs.Clr" Collapsed="true">
+    <Position X="7.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIQAAAAAQAAAAASAAAAAAQAAAAAAgABAAAAAAA=</HashCode>
+      <FileName>Parametrs\Color.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
