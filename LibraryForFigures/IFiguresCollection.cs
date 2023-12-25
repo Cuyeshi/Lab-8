@@ -8,6 +8,6 @@ namespace LibraryForFigures
 
         public string Info();
 
-        GeometricFigure this[int index] { get; set; }
+        Figures this[int index] { get; set; }
     }
 }

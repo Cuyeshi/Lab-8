@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryForFigures", "LibraryForFigures.csproj", "{884E5F1A-A109-42BF-9CD3-8C67AF7E9D94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab8", "..\Lab8\Lab8.csproj", "{40ADB39C-DC89-4435-8B16-130E23C119DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab8", "..\Lab8\Lab8.csproj", "{40ADB39C-DC89-4435-8B16-130E23C119DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsForFigures", "..\TestsForFigures\TestsForFigures.csproj", "{CC0F21A1-0494-42E5-882D-1E614FB2685B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{40ADB39C-DC89-4435-8B16-130E23C119DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40ADB39C-DC89-4435-8B16-130E23C119DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40ADB39C-DC89-4435-8B16-130E23C119DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC0F21A1-0494-42E5-882D-1E614FB2685B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0F21A1-0494-42E5-882D-1E614FB2685B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0F21A1-0494-42E5-882D-1E614FB2685B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0F21A1-0494-42E5-882D-1E614FB2685B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

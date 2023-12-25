@@ -1,4 +1,5 @@
-﻿using LibraryForFigures.Types;
+﻿using LibraryForFigures.Parametrs;
+using LibraryForFigures.Types;
 
 namespace LibraryForFigures
 {
@@ -8,21 +9,53 @@ namespace LibraryForFigures
         {
             get
             {
-                return
+                FigureCollection figures = [];
+
+                Square[] squares =
                 [
-                    new Square(new double[] { 2, 2, 2, 2 }, Parametrs.Clr.Черный),
+                    new Square(new double[] { 2, 2, 2, 2 }, Clr.Черный),
 
                     new Square(),
 
-                    new Square(new double[] { 3, 3, 3, 3 }, Parametrs.Clr.Желтый),
+                    new Square(new double[] { 3, 3, 3, 3 }, Clr.Розовый),
+                ];
+                figures.AddRange( squares );
 
+                Circle[] circles =
+                [
                     new Circle(),
 
-                    new Circle(new Parametrs.Point(2,3), 1, Parametrs.Clr.Зеленый),
+                    new Circle(new Point(2, 3), 1, Clr.Зеленый),
+                ];
+                figures.AddRange( circles );
+
+                Triangle[] triangles =
+                [
+                    new Triangle(),
+
+                    new Triangle(new double[] {3,3,3}, Clr.Желтый)
+                ];
+                figures.AddRange( triangles );
+
+                return figures;
+            }
+        }
+
+        public static FigureCollection SortedValue1
+        {
+            get
+            {
+                return
+                [
+                    new Square(new double[] { 2, 2, 2, 2 }, Clr.Черный),
+
+                    new Square(),
+
+                    new Square(new double[] { 3, 3, 3, 3 }, Clr.Желтый),
 
                     new Triangle(),
 
-                    new Triangle(new double[] {3,3,3}, Parametrs.Clr.Желтый)
+                    new Triangle(new double[] { 3, 3, 3 }, Clr.Желтый)
                 ];
             }
         }

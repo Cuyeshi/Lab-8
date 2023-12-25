@@ -2,7 +2,7 @@
 
 namespace LibraryForFigures.Types
 {
-    public class Circle : GeometricFigure
+    public class Circle : Figures
     {
         private readonly Point _center;
 
@@ -49,7 +49,7 @@ namespace LibraryForFigures.Types
             } 
         }
 
-        public Clr Colour { get { return _color; } }
+        public Clr Color => _color;
 
         public static Circle SetCircle(Point center, double radius, string color)
         {

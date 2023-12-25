@@ -37,8 +37,13 @@ namespace Lab8
 
         private void Button5_Click(object sender, RoutedEventArgs e)
         {
-            Figures.SortByArea();
-            MessageBox.Show("Все многоугольнткт успешно отсортировались по площади (по возрастанию).");
+            Polygon[] figures = Figures.SortByArea();
+            foreach(Polygon p in figures) 
+            {
+                Figures.Remove(p);
+            }
+            Figures.AddRange(figures);
+            MessageBox.Show("Многоугольники успешно отсортированный(по возрастанию)!");
         }
 
         private void Button6_Click(object sender, RoutedEventArgs e)

@@ -1,8 +1,9 @@
 ﻿using LibraryForFigures.Parametrs;
 
+
 namespace LibraryForFigures
 {
-    public class Polygon : GeometricFigure, IComparable<Polygon>
+    public class Polygon : Figures, IComparable<Polygon>
     {
         private readonly double[] _side;
 
@@ -94,6 +95,5 @@ namespace LibraryForFigures
             if (polygon is null) throw new ArgumentException("Некорректное значение параметра");
             return Area().CompareTo(polygon.Area());
         }
-        
     }
 }

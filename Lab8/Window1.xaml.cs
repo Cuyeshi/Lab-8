@@ -25,7 +25,7 @@ namespace Lab8
             int[] rows = [1, 1];
 
             AddHeadLabels();
-            foreach (GeometricFigure figure in figures)
+            foreach (Figures figure in figures)
             {
                 AddLabel(figure, ref rows);
             }
@@ -60,11 +60,11 @@ namespace Lab8
             };
         }
 
-        private void AddLabel(GeometricFigure figure, ref int[] rows)
+        private void AddLabel(Figures figure, ref int[] rows)
         {
             var label = new Label
             {
-                Background = Brushes.LightGray,
+                Background = Brushes.LightSeaGreen,
                 Margin = new Thickness(2, 2, 2, 2),
                 Padding = new Thickness(10, 5, 0, 0),
                 Content = figure.Info(),
@@ -91,24 +91,48 @@ namespace Lab8
             }
             else
             {
-                label.Foreground = figure.Color switch
+                if (figure is Square square)
                 {
-                    Clr.Белый => Brushes.White,
-                    Clr.Черный => Brushes.Black,
-                    Clr.Фиолетовый => Brushes.Purple,
-                    Clr.Синий => Brushes.Blue,
-                    Clr.Розовый => Brushes.Pink,
-                    Clr.Оранжевый => Brushes.Orange,
-                    Clr.Красный => Brushes.Red,
-                    Clr.Зеленый => Brushes.Green,
-                    Clr.Желтый => Brushes.Yellow,
-                    _ => Brushes.Black,
-                };
-                Grid.SetColumn(label, 0);
-                Grid.SetRow(label, rows[0]);
-                rows[0]++;
-            }
-
+                    label.Foreground = square.Color switch
+                    {
+                        Clr.Белый => Brushes.White,
+                        Clr.Черный => Brushes.Black,
+                        Clr.Фиолетовый => Brushes.Purple,
+                        Clr.Синий => Brushes.Blue,
+                        Clr.Розовый => Brushes.Pink,
+                        Clr.Оранжевый => Brushes.Orange,
+                        Clr.Красный => Brushes.Red,
+                        Clr.Зеленый => Brushes.Green,
+                        Clr.Желтый => Brushes.Yellow,
+                        _ => Brushes.Black,
+                    };
+                    Grid.SetColumn(label, 0);
+                    Grid.SetRow(label, rows[0]);
+                    rows[0]++;
+                }
+                else
+                {
+                    if (figure is Triangle triangle)
+                    {
+                        label.Foreground = triangle.Color switch
+                        {
+                            Clr.Белый => Brushes.White,
+                            Clr.Черный => Brushes.Black,
+                            Clr.Фиолетовый => Brushes.Purple,
+                            Clr.Синий => Brushes.Blue,
+                            Clr.Розовый => Brushes.Pink,
+                            Clr.Оранжевый => Brushes.Orange,
+                            Clr.Красный => Brushes.Red,
+                            Clr.Зеленый => Brushes.Green,
+                            Clr.Желтый => Brushes.Yellow,
+                            _ => Brushes.Black,
+                        };
+                        Grid.SetColumn(label, 0);
+                        Grid.SetRow(label, rows[0]);
+                        rows[0]++;
+                    }
+                }
+            }    
             grid1.Children.Add(label);
         }
     }

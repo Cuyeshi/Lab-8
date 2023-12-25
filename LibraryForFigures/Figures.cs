@@ -2,7 +2,7 @@
 
 namespace LibraryForFigures
 {
-    public abstract class GeometricFigure
+    public abstract class Figures
     {
         private readonly string _type;
 

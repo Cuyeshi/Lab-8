@@ -5,11 +5,11 @@ namespace LibraryForFigures
 {
     public class FigureCollection : IFiguresCollection
     {
-        private readonly List<GeometricFigure> figures = new List<GeometricFigure>();
+        private readonly List<Figures> figures = new List<Figures>();
 
-        public IEnumerable<GeometricFigure> Figures => figures;
+        public IEnumerable<Figures> Figures => figures;
 
-        public GeometricFigure this[int i]
+        public Figures this[int i]
         {
             get
             {
@@ -20,7 +20,7 @@ namespace LibraryForFigures
         }
         public IEnumerator GetEnumerator()
         {
-            foreach (GeometricFigure figure in figures)
+            foreach (Figures figure in figures)
             {
                 yield return figure;
             }
@@ -31,7 +31,7 @@ namespace LibraryForFigures
             figures = [];
         }
 
-        public FigureCollection(params GeometricFigure[] figures1)
+        public FigureCollection(params Figures[] figures1)
         {
             figures = figures1.ToList();
         }
@@ -41,20 +41,20 @@ namespace LibraryForFigures
         public string Info()
         {
             string output = "Информация о всех геометрических фигурах: \n";
-            foreach (GeometricFigure figure in figures)
+            foreach (Figures figure in figures)
             {
                 output += figure.Info();
             }
             return output;
         }
 
-        public void Add(GeometricFigure figure) => figures.Add(figure);
+        public void Add(Figures figure) => figures.Add(figure);
 
-        public bool Remove(GeometricFigure figure)
+        public bool Remove(Figures figure)
         {
-            foreach (GeometricFigure gfigure in figures)
+            foreach (Figures gfigure in figures)
             {
-                if(figure.Info() == figure.Info())
+                if(gfigure.Info() == figure.Info())
                 {
                     figures.Remove(gfigure);
                     return true;
@@ -63,17 +63,21 @@ namespace LibraryForFigures
             return false;
         }
 
-        public void AddRange(GeometricFigure[] gfigures) => figures.AddRange(gfigures);
+        public void AddRange(Figures[] gfigures) => figures.AddRange(gfigures);
 
         public Polygon[] Polygons => figures.OfType<Polygon>().ToArray();
+
+        public Circle[] Circles => figures.OfType<Circle>().ToArray();
+
         public Polygon[] SortByArea()
         {
-            Array.Sort(Polygons);
-            return Polygons;
+            Polygon[] figures = Polygons;
+            Array.Sort(figures);
+            return figures;
         }
 
         public List<double> AllCircumferenceMoreOneChapter() => (from circ in figures.OfType<Circle>()
-                                                                 where circ.Center.Chapter == 1 && circ.Center.X > circ.Radius && circ.Center.Y > circ.Radius && circ.Colour == Parametrs.Clr.Зеленый
+                                                                 where circ.Center.Chapter == 1 && circ.Center.X > circ.Radius && circ.Center.Y > circ.Radius && circ.Color == Parametrs.Clr.Зеленый
                                                                  select circ.Circumference).ToList();
     }
 }
