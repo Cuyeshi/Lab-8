@@ -1,12 +1,13 @@
 using LibraryForFigures;
 using LibraryForFigures.Types;
+using LibraryForFigures.Parametrs;
 
 namespace TestsForFigures
 {
     [TestClass]
     public class Tests
     {
-        /*[TestMethod]
+        [TestMethod]
         public void SortByArea_Test1()
         {
             FigureCollection actual = [];
@@ -32,27 +33,30 @@ namespace TestsForFigures
         public void SortByArea_Test3()
         {
             FigureCollection actual = Standart.Value1;
-            actual.SortByArea();
+            Polygon[] polygons = actual.SortByArea();
+            FigureCollection result = new FigureCollection(polygons);
 
             FigureCollection expected = Standart.SortedValue1;
 
-            Assert.AreEqual(expected.Info(), actual.Info());
+            Assert.AreEqual(expected.Info(), result.Info());
         }
 
-        /*[TestMethod]
+        [TestMethod]
         public void SortByArea_Test4()
         {
-            List<double> actual = Standart.Value1.AllPerimetersMoreOneQuarter();
+            FigureCollection actual = [new Circle(), new Square(), new Triangle()];
+            Polygon[] polygons = actual.SortByArea();
+            FigureCollection result = new FigureCollection(polygons);
 
-            List<double> expected = [8, 2];
+            FigureCollection expected = [new Triangle(), new Square()];
 
-            CollectionAssert.AreEqual(expected, actual);
+            Assert.AreEqual(expected.Info(), result.Info());
         }
 
         [TestMethod]
         public void AllCircumferenceMoreOneChapter_Test1()
         {
-            List<double> actual = new FigureCollection(new Circle()).AllPerimetersMoreOneQuarter();
+            List<double> actual = new FigureCollection(new Circle()).AllCircumferenceMoreOneChapter();
 
             List<double> expected = [];
 
@@ -62,7 +66,7 @@ namespace TestsForFigures
         [TestMethod]
         public void AllCircumferenceMoreOneChapter_Test2()
         {
-            List<double> actual = new FigureCollection().AllPerimetersMoreOneQuarter();
+            List<double> actual = new FigureCollection().AllCircumferenceMoreOneChapter();
 
             List<double> expected = [];
 
@@ -72,9 +76,9 @@ namespace TestsForFigures
         [TestMethod]
         public void AllCircumferenceMoreOneChapter_Test3()
         {
-            List<double> actual = new FigureCollection(new Circle()).AllCircumferences();
+            List<double> actual = new FigureCollection(new Circle(new Point(2,2), 1, Clr.Оранжевый)).AllCircumferenceMoreOneChapter();
 
-            List<double> expected = [2 * Math.PI];
+            List<double> expected = [];
 
             CollectionAssert.AreEqual(expected, actual);
         }
@@ -82,11 +86,11 @@ namespace TestsForFigures
         [TestMethod]
         public void AllCircumferenceMoreOneChapter_Test4()
         {
-            List<double> actual = new FigureCollection().AllCircumferences();
+            List<double> actual = Standart.Value1.AllCircumferenceMoreOneChapter();
 
-            List<double> expected = [];
+            List<double> expected = [2 * Math.PI];
 
             CollectionAssert.AreEqual(expected, actual);
-        }*/
+        }
     }
 }

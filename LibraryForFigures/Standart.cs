@@ -47,15 +47,15 @@ namespace LibraryForFigures
             {
                 return
                 [
-                    new Square(new double[] { 2, 2, 2, 2 }, Clr.Черный),
+                    new Triangle(),
 
                     new Square(),
 
-                    new Square(new double[] { 3, 3, 3, 3 }, Clr.Желтый),
+                    new Triangle(new double[] { 3, 3, 3 }, Clr.Желтый),
 
-                    new Triangle(),
+                    new Square(new double[] { 2, 2, 2, 2 }, Clr.Черный),
 
-                    new Triangle(new double[] { 3, 3, 3 }, Clr.Желтый)
+                    new Square(new double[] { 3, 3, 3, 3 }, Clr.Розовый)
                 ];
             }
         }
