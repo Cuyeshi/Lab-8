@@ -48,10 +48,19 @@ namespace Lab8
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Данные введены неверно \nПример для Окружности: 1 2 3 White\nПример для Квадрата: 1 1 1 1 Blue");
+                    MessageBox.Show("Данные введены неверно \nПример для Окружности: 1 2 3 White\nПример для Квадрата: 1 1 1 1 Blue" +
+                        "\nПример для треугольника: 1 2 2 Black.");
                 }
 
             }
+            Close();
+            new Window1(Figures).Show();
+        }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e) 
+        {
+            Close();
+            new Window1(Figures).Show();
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

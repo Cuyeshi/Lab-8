@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab8"
         mc:Ignorable="d"
-            Title="Удаление фигуры" Height="199" Width="321" ResizeMode="NoResize">
-    <Grid Name="grid1" MinHeight="720"  HorizontalAlignment="Center">
+            Title="Удаление фигуры" Height="209" Width="321" ResizeMode="NoResize">
+    <Grid Name="grid1" MinHeight="720"  HorizontalAlignment="Center" Margin="0,-21,0,-527">
         <Grid.RowDefinitions>
             <RowDefinition Height="20"></RowDefinition>
             <RowDefinition Height="50"></RowDefinition>
@@ -26,6 +26,7 @@
         </ComboBox>
         <Label Content="Данные :" Grid.Row="2" HorizontalContentAlignment="Right" Margin="58,8,264,6" Grid.ColumnSpan="2"/>
         <TextBox Name="textBox1" Grid.Column="1" Margin="57,11,110,10" Grid.Row="2" TextWrapping="Wrap" Text=""/>
-        <Button Grid.Column="1" Content="Удалить" Margin="10,10,157,10" Grid.Row="3" Click="Button_Click"/>
+        <Button Content="Удалить" Margin="37,10,173,10" Grid.Row="3" Click="Button_Click" Grid.Column="1"/>
+        <Button Content="Отмена" Margin="37,5,173,15" Grid.Row="4" Click="CancelButton_Click" Grid.Column="1"/>
     </Grid>
 </Window>

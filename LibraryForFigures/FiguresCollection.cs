@@ -3,6 +3,9 @@ using System.Collections;
     
 namespace LibraryForFigures
 {
+    /// <summary>
+    /// Класс для хранения фигур.
+    /// </summary>
     public class FigureCollection : IFiguresCollection
     {
         private readonly List<Figures> figures = new List<Figures>();
@@ -18,6 +21,7 @@ namespace LibraryForFigures
             }
             set => figures[i] = value;
         }
+
         public IEnumerator GetEnumerator()
         {
             foreach (Figures figure in figures)
@@ -77,7 +81,7 @@ namespace LibraryForFigures
         }
 
         public List<double> AllCircumferenceMoreOneChapter() => (from circ in figures.OfType<Circle>()
-                                                                 where circ.Center.Chapter == 1 && circ.Center.X > circ.Radius && circ.Center.Y > circ.Radius && circ.Color == Parametrs.Clr.Зеленый
+                                                                 where circ.Center.Chapter == 1 && circ.Center.X > circ.Radius && circ.Center.Y > circ.Radius && circ.Color == Parametrs.Clr.Green
                                                                  select circ.Circumference).ToList();
     }
 }

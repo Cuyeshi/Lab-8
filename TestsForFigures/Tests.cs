@@ -76,7 +76,7 @@ namespace TestsForFigures
         [TestMethod]
         public void AllCircumferenceMoreOneChapter_Test3()
         {
-            List<double> actual = new FigureCollection(new Circle(new Point(2,2), 1, Clr.Оранжевый)).AllCircumferenceMoreOneChapter();
+            List<double> actual = new FigureCollection(new Circle(new Point(2,2), 1, Clr.Orange)).AllCircumferenceMoreOneChapter();
 
             List<double> expected = [];
 

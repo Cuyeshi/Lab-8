@@ -13,11 +13,11 @@ namespace LibraryForFigures
 
                 Square[] squares =
                 [
-                    new Square(new double[] { 2, 2, 2, 2 }, Clr.Черный),
+                    new Square(new double[] { 2, 2, 2, 2 }, Clr.Black),
 
                     new Square(),
 
-                    new Square(new double[] { 3, 3, 3, 3 }, Clr.Розовый),
+                    new Square(new double[] { 3, 3, 3, 3 }, Clr.Pink),
                 ];
                 figures.AddRange( squares );
 
@@ -25,7 +25,7 @@ namespace LibraryForFigures
                 [
                     new Circle(),
 
-                    new Circle(new Point(2, 3), 1, Clr.Зеленый),
+                    new Circle(new Point(2, 3), 1, Clr.Green),
                 ];
                 figures.AddRange( circles );
 
@@ -33,7 +33,7 @@ namespace LibraryForFigures
                 [
                     new Triangle(),
 
-                    new Triangle(new double[] {3,3,3}, Clr.Желтый)
+                    new Triangle(new double[] {3,3,3}, Clr.Orange)
                 ];
                 figures.AddRange( triangles );
 
@@ -51,11 +51,11 @@ namespace LibraryForFigures
 
                     new Square(),
 
-                    new Triangle(new double[] { 3, 3, 3 }, Clr.Желтый),
+                    new Triangle(new double[] { 3, 3, 3 }, Clr.Orange),
 
-                    new Square(new double[] { 2, 2, 2, 2 }, Clr.Черный),
+                    new Square(new double[] { 2, 2, 2, 2 }, Clr.Black),
 
-                    new Square(new double[] { 3, 3, 3, 3 }, Clr.Розовый)
+                    new Square(new double[] { 3, 3, 3, 3 }, Clr.Pink)
                 ];
             }
         }

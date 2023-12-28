@@ -12,7 +12,7 @@ namespace LibraryForFigures.Types
 
         public Triangle()
         {
-            _color = Clr.Черный;
+            _color = Clr.Black;
             _side = new double[3] { 1, 1, 1 };
             _type = "треугольник";
         }
@@ -64,22 +64,22 @@ namespace LibraryForFigures.Types
         {
             return color switch
             {
-                "White" => new Triangle(side, Clr.Белый),
-                "Black" => new Triangle(side, Clr.Черный),
-                "Yellow" => new Triangle(side, Clr.Желтый),
-                "Red" => new Triangle(side, Clr.Красный),
-                "Green" => new Triangle(side, Clr.Зеленый),
-                "Blue" => new Triangle(side, Clr.Синий),
-                "Purple" => new Triangle(side, Clr.Фиолетовый),
-                "Orange" => new Triangle(side, Clr.Оранжевый),
-                "Pink" => new Triangle(side, Clr.Розовый),
+                "White" => new Triangle(side, Clr.White),
+                "Black" => new Triangle(side, Clr.Black),
+                //"Yellow" => new Triangle(side, Clr.Желтый),
+                "Red" => new Triangle(side, Clr.Red),
+                "Green" => new Triangle(side, Clr.Green),
+                "Blue" => new Triangle(side, Clr.Blue),
+                "Purple" => new Triangle(side, Clr.Purple),
+                "Orange" => new Triangle(side, Clr.Orange),
+                "Pink" => new Triangle(side, Clr.Pink),
                 _ => new Triangle(),
             };
         }
 
         public override string Info()
         {
-            string output = $"Информация о {_type}: \n" + "\tЗначение сторон: ";
+            string output = $"{_type}: \n" + "\tЗначение сторон: ";
             for (int i = 0; i < Side.Length; i++)
             {
                 output += $"{_side[i]} ";

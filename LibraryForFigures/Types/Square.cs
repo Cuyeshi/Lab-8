@@ -12,7 +12,7 @@ namespace LibraryForFigures.Types
 
         public Square()
         {
-            _color = Clr.Черный;
+            _color = Clr.Black;
             _side = new double[4] { 1, 1, 1, 1 };
             _type = "квадрат";
         }
@@ -62,24 +62,44 @@ namespace LibraryForFigures.Types
 
         public static Square SetSquare(double[] side, string color)
         {
-            return color switch
+            switch (color)
             {
-                "White" => new Square(side, Clr.Белый),
-                "Black" => new Square(side, Clr.Черный),
-                "Yellow" => new Square(side, Clr.Желтый),
-                "Red" => new Square(side, Clr.Красный),
-                "Green" => new Square(side, Clr.Зеленый),
-                "Blue" => new Square(side, Clr.Синий),
-                "Purple" => new Square(side, Clr.Фиолетовый),
-                "Orange" => new Square(side, Clr.Оранжевый),
-                "Pink" => new Square(side, Clr.Розовый),
-                _ => new Square(),
+
+                case "White":
+                    return new Square(side, Clr.White);
+                
+                case "Black":
+                    return new Square(side, Clr.Black);
+                
+                //case "Yellow":
+                    //return new Square(side, Clr.Желтый);
+                
+                case "Red":
+                    return new Square(side, Clr.Red);
+                
+                case "Green":
+                    return new Square(side, Clr.Green);
+                
+                case "Blue":
+                    return new Square(side, Clr.Blue);
+               
+                case "Purple":
+                    return new Square(side, Clr.Purple);
+                
+                case "Orange":
+                    return new Square(side, Clr.Orange);
+               
+                case "Pink":
+                    return new Square(side, Clr.Pink);
+                
+                default:
+                    return new Square();
             };
         }
 
         public override string Info()
         {
-            string output = $"Информация о {_type}: \n" + "\tЗначение сторон: ";
+            string output = $"{_type}: \n" + "\tЗначение сторон: ";
             for (int i = 0; i < Side.Length; i++)
             {
                 output += $"{_side[i]} ";

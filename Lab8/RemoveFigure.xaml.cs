@@ -59,6 +59,14 @@ namespace Lab8
                 }
 
             }
+            Close();
+            new Window1(Figures).Show();
+        }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+            new Window1(Figures).Show();
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

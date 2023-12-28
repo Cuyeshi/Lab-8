@@ -5,6 +5,6 @@
         /// <summary>
         /// Цвета
         /// </summary>
-        Зеленый, Синий, Оранжевый, Желтый, Черный, Белый, Фиолетовый, Розовый, Красный
+        Green, Blue, Orange, Black, White, Purple, Pink, Red
     }
 }

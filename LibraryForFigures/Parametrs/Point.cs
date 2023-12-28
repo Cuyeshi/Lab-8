@@ -8,9 +8,9 @@ namespace LibraryForFigures.Parametrs
 {
     public class Point
     {
-        private readonly double _x;
+        private double _x;
 
-        private readonly double _y;
+        private double _y;
 
         public Point()
         {

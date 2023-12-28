@@ -15,12 +15,13 @@
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
+            <RowDefinition />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <RichTextBox x:Name="docBox" />
-        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
-            <Button Content="Загрузить"  Click="Load_Click" />
+        <RichTextBox x:Name="docBox" TextChanged="docBox_TextChanged" Margin="0,0,0,75" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,164,0,7" Width="272">
+            <Button Content="Загрузить"  Click="Load_Click" Width="85" />
+            <Button Content="Отмена" Click="CancelButton_Click" RenderTransformOrigin="0.498,0.561" Width="88"/>
         </StackPanel>
     </Grid>
 </Window>

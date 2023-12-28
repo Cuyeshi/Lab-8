@@ -9,7 +9,46 @@ namespace LibraryForFigures.Parsing
         public static Circle ParseToCircle(string input)
         {
             Match matchColor = Regex.Match(input, @"\b[a-zA-Z]+\b");
-            string color = matchColor.Value.ToString();
+            string checkedColor = matchColor.Value.ToString();
+            string color;
+
+            switch (checkedColor)
+            {
+                case "White":
+                    color = checkedColor;
+                    break;
+                
+                case "Black":
+                    color = checkedColor;
+                    break;
+                
+                case "Red":
+                    color = checkedColor;
+                    break;
+                
+                case "зеленный":
+                    color = checkedColor;
+                    break;
+                
+                case "Blue":
+                    color = checkedColor;
+                    break;
+                
+                case "Purple":
+                    color = checkedColor;
+                    break;
+
+                case "Orange":
+                    color = checkedColor;
+                    break;
+                
+                case "Pink":
+                    color = checkedColor;
+                    break;
+                default:
+                    color = "Black";
+                    break;
+            }
 
             MatchCollection matches = Regex.Matches(input, @"[-]?\d+(\,\d+)?");
             List<double> doubles = (from Match match in matches
@@ -23,7 +62,46 @@ namespace LibraryForFigures.Parsing
         public static Triangle ParseToTriangle(string input) 
         {
             Match matchColor = Regex.Match(input, @"\b[a-zA-Z]+\b");
-            string color = matchColor.Value.ToString();
+            string checkedColor = matchColor.Value.ToString();
+            string color;
+
+            switch (checkedColor)
+            {
+                case "White":
+                    color = checkedColor;
+                    break;
+
+                case "Black":
+                    color = checkedColor;
+                    break;
+
+                case "Red":
+                    color = checkedColor;
+                    break;
+
+                case "зеленный":
+                    color = checkedColor;
+                    break;
+
+                case "Blue":
+                    color = checkedColor;
+                    break;
+
+                case "Purple":
+                    color = checkedColor;
+                    break;
+
+                case "Orange":
+                    color = checkedColor;
+                    break;
+
+                case "Pink":
+                    color = checkedColor;
+                    break;
+                default:
+                    color = "Black";
+                    break;
+            }
 
             MatchCollection matches = Regex.Matches(input, @"[-]?\d+(\,\d+)?");
             List<double> doubles = (from Match match in matches
@@ -37,7 +115,46 @@ namespace LibraryForFigures.Parsing
         public static Square ParseToSquare(string input)
         {
             Match matchColor = Regex.Match(input, @"\b[a-zA-Z]+\b");
-            string color = matchColor.Value.ToString();
+            string checkedColor = matchColor.Value.ToString();
+            string color;
+
+            switch (checkedColor)
+            {
+                case "White":
+                    color = checkedColor;
+                    break;
+
+                case "Black":
+                    color = checkedColor;
+                    break;
+
+                case "Red":
+                    color = checkedColor;
+                    break;
+
+                case "зеленный":
+                    color = checkedColor;
+                    break;
+
+                case "Blue":
+                    color = checkedColor;
+                    break;
+
+                case "Purple":
+                    color = checkedColor;
+                    break;
+
+                case "Orange":
+                    color = checkedColor;
+                    break;
+
+                case "Pink":
+                    color = checkedColor;
+                    break;
+                default:
+                    color = "Black";
+                    break;
+            }
 
             MatchCollection matches = Regex.Matches(input, @"[-]?\d+(\,\d+)?");
             List<double> doubles = (from Match match in matches

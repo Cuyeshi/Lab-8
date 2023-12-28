@@ -3,17 +3,17 @@
   <Comment CommentText="Параметр,содержащий в себе координаты точек">
     <Position X="5.401" Y="0.5" Height="0.75" Width="1.7" />
   </Comment>
-  <Comment CommentText="Параметр, содержащий в себе цвет фигуры">
+  <Comment CommentText="Параметр, содержащий в себе возможные цвета фигур">
     <Position X="7.425" Y="0.5" Height="0.75" Width="1.7" />
   </Comment>
-  <Comment CommentText="Пример FigureCollection">
-    <Position X="9.412" Y="0.5" Height="0.75" Width="1.7" />
+  <Comment CommentText="Пример FigureCollection. Здесь введены начальные значения для упрощения работы с программой&#xD;&#xA;">
+    <Position X="6.654" Y="1.983" Height="0.958" Width="1.8" />
   </Comment>
   <Comment CommentText="Интерфейс и класс для хранения некоторого количества различых фигур">
-    <Position X="11.914" Y="0.5" Height="0.75" Width="1.7" />
+    <Position X="8.722" Y="1.933" Height="0.75" Width="1.7" />
   </Comment>
   <Comment CommentText="Класс для разделения строки на нужные параметры">
-    <Position X="13.938" Y="0.5" Height="0.75" Width="1.7" />
+    <Position X="9.421" Y="0.5" Height="0.75" Width="1.7" />
   </Comment>
   <Class Name="LibraryForFigures.Parametrs.Point" Collapsed="true">
     <Position X="5.5" Y="1.25" Width="1.5" />
@@ -23,7 +23,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="LibraryForFigures.Parsing.Parser" Collapsed="true">
-    <Position X="14" Y="1.25" Width="1.5" />
+    <Position X="9.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgAAAAAAAAAAAAAgAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Parsing\Parser.cs</FileName>
@@ -66,14 +66,14 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="LibraryForFigures.Standart" Collapsed="true">
-    <Position X="9.5" Y="1.25" Width="1.5" />
+    <Position X="6.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>Standart.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LibraryForFigures.FigureCollection" Collapsed="true">
-    <Position X="12" Y="2.25" Width="1.5" />
+    <Position X="8" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAIAACAAAAAABBAQCAAABAAAAAAAAAABAAAAAUAEIAA=</HashCode>
       <FileName>FiguresCollection.cs</FileName>
@@ -81,7 +81,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="LibraryForFigures.IFiguresCollection" Collapsed="true">
-    <Position X="12" Y="1.25" Width="1.5" />
+    <Position X="8.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAUAAAAA=</HashCode>
       <FileName>IFiguresCollection.cs</FileName>
@@ -90,7 +90,7 @@
   <Enum Name="LibraryForFigures.Parametrs.Clr" Collapsed="true">
     <Position X="7.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAIQAAAAAQAAAAASAAAAAAQAAAAAAgABAAAAAAA=</HashCode>
+      <HashCode>AAAGAAAAAAAAAhAAAAAABAAABAAAAAAAAAAAABAAAAA=</HashCode>
       <FileName>Parametrs\Color.cs</FileName>
     </TypeIdentifier>
   </Enum>

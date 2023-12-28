@@ -16,7 +16,7 @@ namespace LibraryForFigures.Types
         {
             _center = new Point();
             _radius = 1;
-            _color = Clr.Черный;
+            _color = Clr.Black;
             _type = "окружность";
         }
 
@@ -55,22 +55,22 @@ namespace LibraryForFigures.Types
         {
             return color switch
             {
-                "White" => new Circle(center, radius, Clr.Белый),
-                "Black" => new Circle(center, radius, Clr.Черный),
-                "Yellow" => new Circle(center, radius, Clr.Желтый),
-                "Red" => new Circle(center, radius, Clr.Красный),
-                "Green" => new Circle(center, radius, Clr.Зеленый),
-                "Blue" => new Circle(center, radius, Clr.Синий),
-                "Purple" => new Circle(center, radius, Clr.Фиолетовый),
-                "Orange" => new Circle(center, radius, Clr.Оранжевый),
-                "Pink" => new Circle(center, radius, Clr.Розовый),
+                "White" => new Circle(center, radius, Clr.White),
+                "Black" => new Circle(center, radius, Clr.Black),
+                //"Yellow" => new Circle(center, radius, Clr.Желтый),
+                "Red" => new Circle(center, radius, Clr.Red),
+                "Green" => new Circle(center, radius, Clr.Green),
+                "Blue" => new Circle(center, radius, Clr.Blue),
+                "Purple" => new Circle(center, radius, Clr.Purple),
+                "Orange" => new Circle(center, radius, Clr.Orange),
+                "Pink" => new Circle(center, radius, Clr.Pink),
                 _ => new Circle(),
             };
         }
 
         public override string Info()
         {
-            return $"Информация о {_type}: \n" +
+            return $"{_type}: \n" +
                    $"\tКоординаты центра: ({_center.X};{_center.Y}); \n" +
                    $"\tРадиус равен {Math.Round(Radius, 3)}; \n" +
                    $"\tЦвет: {_color}; \n" +

@@ -47,12 +47,13 @@ namespace Lab8
             }
         }
 
-        private Label AddLabel(string content)
+        private static Label AddLabel(string content)
         {
             return new Label
             {
                 Content = content,
                 FontSize = 16,
+                BorderThickness = new Thickness(1),
                 FontWeight = FontWeights.Bold,
                 HorizontalContentAlignment = HorizontalAlignment.Center,
                 VerticalContentAlignment = VerticalAlignment.Bottom,
@@ -64,7 +65,7 @@ namespace Lab8
         {
             var label = new Label
             {
-                Background = Brushes.LightSeaGreen,
+                Background = Brushes.GhostWhite,
                 Margin = new Thickness(2, 2, 2, 2),
                 Padding = new Thickness(10, 5, 0, 0),
                 Content = figure.Info(),
@@ -74,15 +75,15 @@ namespace Lab8
             {
                 label.Foreground = circle.Color switch
                 {
-                    Clr.Белый => Brushes.White,
-                    Clr.Черный => Brushes.Black,
-                    Clr.Фиолетовый => Brushes.Purple,
-                    Clr.Синий => Brushes.Blue,
-                    Clr.Розовый => Brushes.Pink,
-                    Clr.Оранжевый => Brushes.Orange,
-                    Clr.Красный => Brushes.Red,
-                    Clr.Зеленый => Brushes.Green,
-                    Clr.Желтый => Brushes.Yellow,
+                    Clr.White => Brushes.White,
+                    Clr.Black => Brushes.Black,
+                    Clr.Purple => Brushes.Purple,
+                    Clr.Blue => Brushes.Blue,
+                    Clr.Pink => Brushes.Pink,
+                    Clr.Orange => Brushes.Orange,
+                    Clr.Red => Brushes.Red,
+                    Clr.Green => Brushes.Green,
+                    //Clr.Желтый => Brushes.Yellow,
                     _ => Brushes.Black,
                 };
                 Grid.SetColumn(label, 1);
@@ -95,15 +96,15 @@ namespace Lab8
                 {
                     label.Foreground = square.Color switch
                     {
-                        Clr.Белый => Brushes.White,
-                        Clr.Черный => Brushes.Black,
-                        Clr.Фиолетовый => Brushes.Purple,
-                        Clr.Синий => Brushes.Blue,
-                        Clr.Розовый => Brushes.Pink,
-                        Clr.Оранжевый => Brushes.Orange,
-                        Clr.Красный => Brushes.Red,
-                        Clr.Зеленый => Brushes.Green,
-                        Clr.Желтый => Brushes.Yellow,
+                        Clr.White => Brushes.White,
+                        Clr.Black => Brushes.Black,
+                        Clr.Purple => Brushes.Purple,
+                        Clr.Blue => Brushes.Blue,
+                        Clr.Pink => Brushes.Pink,
+                        Clr.Orange => Brushes.Orange,
+                        Clr.Red => Brushes.Red,
+                        Clr.Green => Brushes.Green,
+                        //Clr.Желтый => Brushes.Yellow,
                         _ => Brushes.Black,
                     };
                     Grid.SetColumn(label, 0);
@@ -116,15 +117,15 @@ namespace Lab8
                     {
                         label.Foreground = triangle.Color switch
                         {
-                            Clr.Белый => Brushes.White,
-                            Clr.Черный => Brushes.Black,
-                            Clr.Фиолетовый => Brushes.Purple,
-                            Clr.Синий => Brushes.Blue,
-                            Clr.Розовый => Brushes.Pink,
-                            Clr.Оранжевый => Brushes.Orange,
-                            Clr.Красный => Brushes.Red,
-                            Clr.Зеленый => Brushes.Green,
-                            Clr.Желтый => Brushes.Yellow,
+                            Clr.White => Brushes.White,
+                            Clr.Black => Brushes.Black,
+                            Clr.Purple => Brushes.Purple,
+                            Clr.Blue => Brushes.Blue,
+                            Clr.Pink => Brushes.Pink,
+                            Clr.Orange => Brushes.Orange,
+                            Clr.Red => Brushes.Red,
+                            Clr.Green => Brushes.Green,
+                            //Clr.Желтый => Brushes.Yellow,
                             _ => Brushes.Black,
                         };
                         Grid.SetColumn(label, 0);
@@ -134,6 +135,29 @@ namespace Lab8
                 }
             }    
             grid1.Children.Add(label);
+        }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            new AddFigure(Figures).Show();
+            Close();
+        }
+        
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            new RemoveFigure(Figures).Show();
+            Close();
+        }
+
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+        
+        private void Refresh_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+            new Window1(Figures).Show();
         }
     }
 }

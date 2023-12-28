@@ -5,15 +5,15 @@ namespace LibraryForFigures
 {
     public class Polygon : Figures, IComparable<Polygon>
     {
-        private readonly double[] _side;
+        private double[] _side;
 
-        private readonly Clr _color;
+        private Clr _color;
 
-        private readonly string _type;
+        private string _type;
 
         public Polygon()
         {
-            _color = Clr.Черный;
+            _color = Clr.Black;
             _side = new double[3] {1,1,1};
             _type = "треугольник";
         }
@@ -65,15 +65,15 @@ namespace LibraryForFigures
         {
             return color switch
             {
-                "White" => new Polygon(side, Clr.Белый),
-                "Black" => new Polygon(side, Clr.Черный),
-                "Yellow" => new Polygon(side, Clr.Желтый),
-                "Red" => new Polygon(side, Clr.Красный),
-                "Green" => new Polygon(side, Clr.Зеленый),
-                "Blue" => new Polygon(side, Clr.Синий),
-                "Purple" => new Polygon(side, Clr.Фиолетовый),
-                "Orange" => new Polygon(side, Clr.Оранжевый),
-                "Pink" => new Polygon(side, Clr.Розовый),
+                "White" => new Polygon(side, Clr.White),
+                "Black" => new Polygon(side, Clr.Black),
+                //"Yellow" => new Polygon(side, Clr.Желтый),
+                "Red" => new Polygon(side, Clr.Red),
+                "Green" => new Polygon(side, Clr.Green),
+                "Blue" => new Polygon(side, Clr.Blue),
+                "Purple" => new Polygon(side, Clr.Purple),
+                "Orange" => new Polygon(side, Clr.Orange),
+                "Pink" => new Polygon(side, Clr.Pink),
                 _ => new Polygon(),
             };
         }

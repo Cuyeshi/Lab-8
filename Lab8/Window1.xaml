@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab8"
         mc:Ignorable="d"
-            MinWidth="800" MinHeight="720" Title="Вывод всех фигур">
-    <Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+            Width="800" MinHeight="720" Title="Вывод всех фигур">
+    <Grid Margin="103,0,0,0">
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" Margin="-64,0,223,0">
             <Grid Name="grid1" MinHeight="720"  HorizontalAlignment="Left">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40" ></RowDefinition>
                     <RowDefinition Height="125"></RowDefinition>
                     <RowDefinition Height="125"></RowDefinition>
                     <RowDefinition Height="125"></RowDefinition>
@@ -31,5 +31,10 @@
                 </Grid.ColumnDefinitions>
             </Grid>
         </ScrollViewer>
+        <Button Content="Добавить фигуру" HorizontalAlignment="Left" Margin="501,45,0,0" VerticalAlignment="Top" Height="37" Width="168" Click="Button1_Click"/>
+        <Button Content="Удалить фигуру" HorizontalAlignment="Left" Height="37" Margin="501,105,0,0" VerticalAlignment="Top" Width="168" Click="Button2_Click"/>
+        <Button Content="Вернуться в меню" HorizontalAlignment="Left" Height="37" Margin="501,163,0,0" VerticalAlignment="Top" Width="168" Click="Button3_Click"/>
+        <Button Content="Обновить список" HorizontalAlignment="Left" Height="37" Margin="501,222,0,0" VerticalAlignment="Top" Width="168" Click="Refresh_Click"/>
+
     </Grid>
 </Window>

@@ -5,17 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab8"
         mc:Ignorable="d"
-        Title="Меню" Height="450" Width="800">
-    <Grid Margin="0,0,0,-6">
+        Title="Меню" Height="341" Width="452">
+    <Grid Margin="-41,-5,-106,0" Height="300" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="800"/>
-            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="28.8"/>
+            <ColumnDefinition Width="84"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Content="Вывод информации о фигурах" HorizontalAlignment="Center" Height="37" Margin="0,33,0,0" VerticalAlignment="Top" Width="276" Click="Button1_Click"/>
-        <Button Content="Добавить фигуру" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top" Height="37" Width="276" Click="Button2_Click"/>
-        <Button Content="Удалить фигуру" HorizontalAlignment="Center" Height="37" Margin="0,156,0,0" VerticalAlignment="Top" Width="276" Click="Button3_Click"/>
-        <Button Content="Добавить фигуру из файла" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="37" Width="276" Click="Button4_Click"/>
-        <Button Content="Отсортировать многоугольники &#xA;                  по площади" HorizontalAlignment="Center" Height="37" Margin="0,276,0,0" VerticalAlignment="Top" Width="276" Click="Button5_Click"/>
-        <Button Content="Вычислить длины окружностей зелёного цвета,&#xD;&#xA;целиком расположенных в первой четверти" HorizontalAlignment="Center" Height="37" Margin="0,336,0,0" VerticalAlignment="Top" Width="276" Click="Button6_Click"/>
+        <Button Content="Вывод информации о фигурах" HorizontalAlignment="Left" Height="37" Margin="14,26,0,0" VerticalAlignment="Top" Width="276" Click="Button1_Click" Grid.Column="2"/>
+        <Button Content="Добавить данные из файла" HorizontalAlignment="Left" Margin="14,93,0,0" VerticalAlignment="Top" Height="37" Width="276" Click="Button4_Click" Grid.Column="2"/>
+        <Button Content="Отсортировать фигуры &#xA;          по площади" HorizontalAlignment="Left" Height="37" Margin="14,163,0,0" VerticalAlignment="Top" Width="276" Click="Button5_Click" Grid.Column="2"/>
+        <Button Content="Выполнить особое задание" HorizontalAlignment="Left" Height="37" Margin="14,228,0,0" VerticalAlignment="Top" Width="276" Click="Button6_Click" Grid.Column="2"/>
     </Grid>
 </Window>

@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab8"
         mc:Ignorable="d"
-            Title="Запись новой фигуры" Height="196" Width="350" ResizeMode="NoResize">
-    <Grid Name="grid1" MinHeight="720"  HorizontalAlignment="Center">
+            Title="Запись новой фигуры" Height="216" Width="321" ResizeMode="NoResize">
+    <Grid Name="grid1" MinHeight="720"  HorizontalAlignment="Center" Margin="0,-18,0,-520">
         <Grid.RowDefinitions>
             <RowDefinition Height="20"></RowDefinition>
             <RowDefinition Height="50"></RowDefinition>
@@ -17,18 +17,21 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="37"></ColumnDefinition>
             <ColumnDefinition Width="113"/>
-            <ColumnDefinition Width="85"></ColumnDefinition>
-            <ColumnDefinition Width="146"/>
+            <ColumnDefinition Width="71.2"></ColumnDefinition>
+            <ColumnDefinition Width="13.8"/>
+            <ColumnDefinition Width="14.2"/>
+            <ColumnDefinition Width="131.8"/>
             <ColumnDefinition Width="69"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Фигура :" Grid.Row="1" HorizontalContentAlignment="Right" HorizontalAlignment="Center" Width="123" Margin="0,12,0,12" Grid.ColumnSpan="2" Grid.Column="1"/>
-        <ComboBox Name="comboBox1"  Grid.Column="2" Margin="77,16,28,12" Grid.Row="1" SelectionChanged="ComboBox_SelectionChanged" Grid.ColumnSpan="2">
+        <Label Content="Фигура :" Grid.Row="1" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Width="124" Margin="37,12,0,12" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <ComboBox Name="comboBox1"  Grid.Column="3" Margin="6,16,28,12" Grid.Row="1" SelectionChanged="ComboBox_SelectionChanged" Grid.ColumnSpan="3">
             <ComboBoxItem>Квадрат</ComboBoxItem>
             <ComboBoxItem>Треугольник</ComboBoxItem>
             <ComboBoxItem>Окружность</ComboBoxItem>
         </ComboBox>
-        <Label Content="Данные :" Grid.Row="2" HorizontalContentAlignment="Right" Margin="39,7,37,7" Grid.ColumnSpan="2" Grid.Column="1"/>
-        <TextBox Name="textBox1" Grid.Column="2" Margin="77,11,28,10" Grid.Row="2" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2"/>
-        <Button Grid.Column="2" Content="Записать" Margin="10,10,88,10" Grid.Row="3" Click="Button_Click" Grid.ColumnSpan="2"/>
+        <Label Content="Данные :" Grid.Row="2" HorizontalContentAlignment="Right" Margin="39,7,23,7" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBox Name="textBox1" Grid.Column="3" Margin="6,11,28,10" Grid.Row="2" TextWrapping="Wrap" Text="" Grid.ColumnSpan="3"/>
+        <Button Grid.Column="2" Content="Записать" Margin="30,10,111,10" Grid.Row="3" Click="Button_Click" Grid.ColumnSpan="4"/>
+        <Button Content="Отмена" Margin="30,5,111,15" Grid.Row="4" Click="CancelButton_Click" Grid.Column="2" Grid.ColumnSpan="4"/>
     </Grid>
 </Window>

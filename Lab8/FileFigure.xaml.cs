@@ -63,5 +63,16 @@ namespace Lab8
                 }
             }
         }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e) =>
+                Close();
+
+        void okButton_Click(object sender, RoutedEventArgs e) =>
+                DialogResult = true;
+
+        private void docBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
+        }
     }
 }
